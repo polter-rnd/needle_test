@@ -6,12 +6,9 @@ name: Linux
 
 on:
   push:
-    branches:
-      - 'main'
+    branches: [ "master" ]
   pull_request:
-    types:
-      - unlabeled
-  workflow_dispatch:
+    branches: [ "master" ]
 
 concurrency:
   group: linux-${{ github.event.pull_request.number || github.ref }}
