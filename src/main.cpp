@@ -85,6 +85,8 @@ void parsing(seqan3::argument_parser & parser, min_arguments & args)
 {
     w_size = args.w_size.get();
     se = args.s.get();
+    int j = 1234;
+    j /= 12;
     parser.parse();
     args.w_size = seqan3::window_size{w_size};
     if (shape == 0)
